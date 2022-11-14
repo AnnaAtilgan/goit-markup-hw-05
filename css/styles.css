@@ -125,11 +125,12 @@ address {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
+   transition: color var(--o-transition-duration) var(--o-transition-timing-function);
 }
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: var(--acsent-colour);
-  transition: translate var(--o-transition-duration) var(--o-transition-timing-function);
+ 
 }
 
 .header-nav-link.current::after {
@@ -195,6 +196,7 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--description-text-color);
+  transition: color var(--o-transition-duration) var(--o-transition-timing-function);
 }
 
 .header-mail {
@@ -204,18 +206,19 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--description-text-color);
+  transition: color var(--o-transition-duration) var(--o-transition-timing-function);
 }
 
 .header-tel:hover,
 .header-tel:focus {
   color: var(--acsent-colour);
-  transition: var(--o-transition-duration) var(--o-transition-timing-function);
+  
 }
 
 .header-mail:hover,
 .header-mail:focus {
   color: var(--acsent-colour);
-  transition: var(--o-transition-duration) var(--o-transition-timing-function);
+  
 }
 
 .header-icon {
@@ -276,11 +279,12 @@ address {
   border-radius: 4px;
   border: var(--acsent-colour);
   padding: 10px 32px;
+  transition: color var(--o-transition-duration) var(--o-transition-timing-function);
 }
 .main-btn:hover,
 .main-btn:focus {
   color: #188ce8;
-  transition: var(--o-transition-duration) var(--o-transition-timing-function);
+  
 }
 /*-------------------------------------------Особливості-----------------*/
 
@@ -354,6 +358,8 @@ address {
 }
 
 .overlay-text {
+  font-weight: 700;
+  letter-spacing: 0.03em;
   text-align: center;
   text-transform: uppercase;
   color: var(--main-title-color);
@@ -402,6 +408,8 @@ address {
 }
 .card {
   background: var(--main-title-color);
+   border-radius: 0px 0px 4px 4px;
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .socials {
@@ -420,13 +428,13 @@ address {
   border-radius: 50%;
   background-color: var(--main-title-color);
   color: #afb1b8;
+   transition: background-color var(--o-transition-duration) var(--o-transition-timing-function), color var(--o-transition-duration) var(--o-transition-timing-function);
 }
 
 .socials-link:hover,
 .socials-link:focus {
   background-color: var(--acsent-colour);
   color: var(--main-title-color);
-  transition: var(--o-transition-duration) var(--o-transition-timing-function);
 }
 
 .socials-icon {
@@ -473,6 +481,7 @@ border-radius: 4px;
   border-radius: 4px;
   color: #afb1b8;
   cursor: pointer;
+  transition: border-color var(--o-transition-duration) var(--o-transition-timing-function), color var(--o-transition-duration) var(--o-transition-timing-function);
 }
 
 .company-icon {
@@ -483,7 +492,6 @@ border-radius: 4px;
 .clients-link:focus {
   color: var(--acsent-colour);
   border-color: var(--acsent-colour);
-  transition: var(--o-transition-duration) var(--o-transition-timing-function);
 }
 
 /*-------------------------------Footer-----------------------------*/
@@ -532,12 +540,12 @@ border-radius: 4px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color var(--o-transition-duration) var(--o-transition-timing-function);
 }
 
 .footer-contact:hover,
 .footer-contact:focus {
   color: var(--acsent-colour);
-  transition: var(--o-transition-duration) var(--o-transition-timing-function);
 }
 
 .adress-wrapper {
@@ -577,6 +585,7 @@ footer-icons .footer-socials {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: background-color var(--o-transition-duration) var(--o-transition-timing-function);
 }
 
 .socials-icon-footer {
@@ -586,7 +595,6 @@ footer-icons .footer-socials {
 .footer-socials-link:hover,
 .footer-socials-link:focus {
   background-color: var(--acsent-colour);
-  transition: var(--o-transition-duration) var(--o-transition-timing-function);
 }
 
 .socials-footer {
@@ -639,6 +647,7 @@ footer-icons .footer-socials {
   background-color: #f5f4fa;
   border-radius: 4px;
   border-style: none;
+  transition: background-color var(--o-transition-duration) var(--o-transition-timing-function), color var(--o-transition-duration) var(--o-transition-timing-function), box-shadow var(--o-transition-duration) var(--o-transition-timing-function);
 }
 
 .btn-text:hover,
@@ -647,7 +656,6 @@ footer-icons .footer-socials {
   color: var(--main-title-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: var(--o-transition-duration) var(--o-transition-timing-function);
 }
 
 /*--------Images---------------------*/
@@ -655,11 +663,11 @@ footer-icons .footer-socials {
   box-sizing: border-box;
   width: 370px;
   background: var(--main-title-color);
+  transition: bow-shadow var(--o-transition-duration) var(--o-transition-timing-function);
 }
 .box:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: var(--o-transition-duration) var(--o-transition-timing-function);
 }
 
 .img-border {
